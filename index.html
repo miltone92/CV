@@ -1,435 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Font Awesome-->
+    <script
+    src="https://kit.fontawesome.com/6fdd69e128.js"
+    crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/dropdown.css"/>
+
 
     <title>Milton Pineda</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Custom fonts for this template -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
-      rel="stylesheet"
-    />
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet" />
-    <link href="css/custom.css" rel="stylesheet" />
   </head>
+  <body>
+    <div class="flex-grid">
+      <div id="side-nav" class="side-nav col">
+        <a href="#about" id="top-nav-logo">Milton Pineda</a>
+        <a href="#" class="btn-close" id="close-button">&times</a>
 
-  <body id="page-top">
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      id="sideNav"
-    >
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Milton Pineda Lizardo</span>
-        <span class="d-none d-lg-block">
-          <img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="img/profile.jpg"
-            alt=""
-          />
-        </span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience"
-              >Experience</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"
-              >Education</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#techincalBG"
-              >Technical Background</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#references"
-              >References</a
-            >
-          </li>
-          <li>
-            <div>
-              <br />
-            </div>
-          </li>
-
-          <li class="nav-item" id="downloadLink">
+        <div class="aligner">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#techincalBG">Technical Background</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#references">References</a>
             <a
-              class="nav-link js-scroll-trigger"
-              href="./downloads/MiltonPinedaCV.pdf"
-              download="Milton Pineda CV"
-              >Download CV <i class="fas fa-download"></i
-            ></a>
-          </li>
-
-          <!-- <li class="nav-item" id="downloadLink">
-            <a class="nav-link js-scroll-trigger" href="https://docs.google.com/document/d/1NP_KGWxQOOSPYC6nYPjS4puavs0mdrgwApZ33xQ4k_8/edit?usp=sharing" download="Milton Pineda CV">View CV <i class="far fa-file-word"></i></a>
-          </li> -->
-        </ul>
+            class="nav-link js-scroll-trigger"
+            href="./downloads/MiltonPinedaCV.pdf"
+            download="Milton Pineda CV"
+            >Download CV <i class="fas fa-download"></i
+          ></a>
+          <span id="open-topnav-button" class="dropdown">
+            <a href="#" id="">
+                <svg width="30" height="30" class="dropbtn">
+                    <path d="M0,5, 30, 5" stroke="#fff" stroke-width="5"/>
+                    <path d="M0, 14 30, 14" stroke="#fff" stroke-width="5"/>
+                    <path d="M0, 23 30, 23" stroke="#fff" stroke-width="5"/>
+                </svg>
+                <div class="dropdown-content">
+                  <a class="" href="#about">About</a>
+                  <a class="" href="#experience">Experience</a>
+                  <a class="" href="#education">Education</a>
+                  <a class="" href="#techincalBG">Technical Background</a>
+                  <a class="" href="#skills">Skills</a>
+                  <a class="" href="#references">References</a>
+                  <a
+                  class="nav-link js-scroll-trigger"
+                  href="./downloads/MiltonPinedaCV.pdf"
+                  download="Milton Pineda CV"
+                  >Download CV <i class="fas fa-download"></i
+                ></a>
+                </div>
+            </a>
+          </span>
+        </div>
       </div>
-    </nav>
 
-    <div class="container-fluid p-0">
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="about"
-      >
-        <div class="w-100">
-          <h1 class="mb-0">
-            Milton
-            <span class="text-primary">Pineda</span>
-          </h1>
+      <div class="content col">
+
+
+        <span id="open-sidenav-button"">
+          <a href="#" id="openSlideButton">
+              <svg width="30" height="30">
+                  <path d="M0,5, 30, 5" stroke="#3d3d3d" stroke-width="5"/>
+                  <path d="M0, 14 30, 14" stroke="#3d3d3d" stroke-width="5"/>
+                  <path d="M0, 23 30, 23" stroke="#3d3d3d" stroke-width="5"/>
+              </svg>
+          </a>
+        </span>
+
+        <section id="about" class="portfolio-section">
+          <h1>Milton <span class="bulbasaur-green">Pineda</span></h1>
           <h3>Software Engineer - Industrial Engineer</h3>
 
-          <div class="subheading mb-5">
+          <div class="sub-heading">
             (506) 8706-1630 <br />
             San Rafael, Escazú, Costa Rica <br />
             <a href="mailto:miltone92@gmail.com">miltone92@gmail.com</a>
           </div>
-          <!-- <p class="lead mb-5">..</p> -->
           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/milton-pineda-4b5788192/">
-              <i class="fab fa-linkedin-in"></i>
+            <a target="_blank" href="https://www.linkedin.com/in/milton-pineda-4b5788192/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://github.com/miltone92">
+                <i class="fab fa-github"></i>
             </a>
             <!-- <a href="#">
             <i class="fab fa-github"></i>
           </a> -->
             <!-- · -->
           </div>
-        </div>
-      </section>
 
-      <hr class="m-0" />
+          
+        </section>
 
-      <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="experience"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Experience</h2>
+        <section id="experience" class="portfolio-section">
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Research Analyst</h3>
-              <div class="subheading mb-3">McKinsey & Company</div>
-              <p>
-                10 months of internship work as a Research Analyst at
-                McKinsey&Company. (Research analyst for diverse demographic,
-                economic, and market inquiries regarding the Latin-American
-                region). (2018)
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Software Engineering Projects</h3>
-              <div class="subheading mb-3">
-                Cenfotec University · Proyecto 1
-              </div>
-              <p>
-                Node JS Web Application for national elementary and highschool
-                educational centers
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">First quarter of 2019</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <div class="subheading mb-3">
-                Cenfotec University · Proyecto 2
-              </div>
-              <p>.Net Web Application for national hotel businesses</p>
+            <h2 class="section-heading">Experience</h2>
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3>BrainStation Immersive Program</h3>
+                    <h4 class="rhydon-gray">Konrad Group · QI</h4>
+                    <p>The scholarships are awarded to the candidates who obtain the highest scores during the selection process where the criteria to be considered are: mastery of theoretical / technical concepts in programming, results of the practical test, performance in the interview and level of English.</p>
+                </div>
+                <div class="section-item-date">
+                    <p class="bulbasaur-green">2020</p>
+                </div>
             </div>
 
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Second quarter of 2019</span>
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3>Software Engineering Projects</h3>
+                </div>
+                <div class="section-item-date">
+                    <p class="bulbasaur-green">2019</p>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="education"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Education</h2>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Cenfotec University</h3>
-              <div class="subheading mb-3">Technical Degree</div>
-              <div>Software Development</div>
-              <!-- <p>GPA: 3.23</p> -->
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3></h3>
+                    <h4 class="rhydon-gray">Cenfotec University · Project 1 · QI</h4>
+                    <p>Node JS Web Application for national elementary and highschool educational centers. </p>
+                </div>
+                <div class="section-item-date">
+                    <p></p>
+                </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018 - 2019</span>
-            </div>
-          </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Univesidad Latina</h3>
-              <div class="subheading mb-3">Licentiate Degree</div>
-              <div>Logistics</div>
-              <!-- <p>GPA: 3.23</p> -->
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3></h3>
+                    <h4 class="rhydon-gray">Cenfotec University · Project 2 · QII</h4>
+                    <p>.Net Web Application for national hotel businesses. The project was selected to represent the university in front of faculty representatives, students, and invited enterprises at "ExpoCenfo". </p>
+                </div>
+                <div class="section-item-date">
+                    <p></p>
+                </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2016 - 2017</span>
-            </div>
-          </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Univesidad Latina</h3>
-              <div class="subheading mb-3">Bachelor Degree</div>
-              <div>Industrial Engineering</div>
-              <!-- <p>GPA: 3.23</p> -->
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3></h3>
+                    <h4 class="rhydon-gray">Cenfotec University · Design Patters Project · QIII</h4>
+                    <p>Development of a strategic board game through the use of multiple software design patterns. The project was selected to represent the university in front of faculty representatives, students, and invited enterprises at "ExpoCenfo".</p>
+                </div>
+                <div class="section-item-date">
+                    <p></p>
+                </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2012 - 2016</span>
+
+
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3>Research Analyst</h3>
+                    <h4 class="rhydon-gray">McKinsey & Company</h4>
+                    <p>10 months of internship work as a Research Analyst at McKinsey&Company. (Research analyst for diverse
+                    demographic, economic, and market inquiries regarding the Latin-American region). </p>
+                </div>
+                <div class="section-item-date">
+                    <p class="bulbasaur-green">2018</p>
+                </div>
             </div>
-          </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Panamerican Highschool</h3>
-              <div class="subheading mb-3">Highschool Diploma</div>
-              <!-- <div>Industrial Engineering </div> -->
-              <!-- <p>GPA: 3.23</p> -->
+        </section>
+
+        <!-- <section id="gallery" class="portfolio-section">
+      
+        </section> -->
+
+        <section id="education" class="portfolio-section">
+
+
+            <h2 class="section-heading">Education</h2>
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3 >Cenfotec University</h3>
+                    <h4 class="sub-heading">Technical Degree</h4>
+                    <p>Software Development</p>
+                </div>
+                <div class="section-item-date">
+                    <p class="bulbasaur-green">2018 - 2019</p>
+                </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2010</span>
+
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3>Universidad Latina</h3>
+                    <h4 class="sub-heading">Licentiate Degree</h4>
+                    <p>Logistics</p>
+                </div>
+                <div class="section-item-date">
+                    <p class="bulbasaur-green">2016 - 2017</p>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <hr class="m-0" />
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3>Universidad Latina</h3>
+                    <h4 class="sub-heading">Bachelor Degree</h4>
+                    <p>Industrial Engineering</p>
+                </div>
+                <div class="section-item-date">
+                    <p class="bulbasaur-green">2012 - 2016</p>
+                </div>
+            </div>
 
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="techincalBG"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Technical Background</h2>
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3>JSL日本アカデミー · 沖縄</h3>
+                    <h4 class="sub-heading">Basic Japanese Studies</h4>
+                    <p></p>
+                </div>
+                <div class="section-item-date">
+                    <p class="bulbasaur-green">2011</p>
+                </div>
+            </div>
 
-          <p>
-            Currently studying Software Engineering at Cenfotec with admiration
-            for software development process. At ease with creating effective
-            relationships with people involved in software production.
-          </p>
-          <!-- <div class="subheading mb-3">Programming Languages &amp; Tools</div> -->
-          <div class="subheading mb-3">Programming Languages</div>
-          <!-- <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3>Panamerican High School</h3>
+                    <h4 class="sub-heading">High School Diploma</h4>
+                    <p></p>
+                </div>
+                <div class="section-item-date">
+                    <p class="bulbasaur-green">2010</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="techincalBG" class="portfolio-section">
+            <h2 class="section-heading">Technical Background</h2>
+            <p class="rhydon-gray">
+                Currently, studying Software Engineering at Cenfotec with admiration
+                for software development process. At ease with creating effective
+                relationships with people involved in software production.
+            </p>
+            <div class="section-item">
+                <div class="section-item-description">
+                    <h3>Programming Languages</h3>
+     
+                    <ul class="fa-ul rhydon-gray">
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          Java, C#, C++, SQL
+                        </li>
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          HTML, CSS, JavaScript, TypeScript, JQuery
+                        </li>
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          Bootstrap, CSS
+                        </li>
+                      </ul>
+            
+                      <br />
+                      <h3>Frameworks</h3>
+                      <ul class="fa-ul rhydon-gray">
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          Node.js - Mongo
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          ASP.NET
+                        </li>
+                      </ul>
+            
+                      <br />
+                      <h3>Worked with</h3>
+                      <ul class="fa-ul rhydon-gray">
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          Express.js, Mongoose.js, Node.js
+                        </li>
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          SQL Server 2017, Mongo DataBase, JDBC, Oracle
+                        </li>
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          Bitbucket, Microsoft TFS (Azure DevOps), GitHub
+                        </li>
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          Postman
+                        </li>
+                        <li>
+                          <i class="fa-li fa fa-check"></i>
+                          Visual Studio 2017, VS Code, NetBeans
+                        </li>
+                      </ul>
+                </div>
+    
+            </div>
+        </section>  
+
+        <section id="skills" class="portfolio-section">
+            <h2 class="section-heading">Languages</h2>
+            <ul class="fa-ul rhydon-gray">
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  Spanish <span class="bulbasaur-green">100%</span>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  English <span class="bulbasaur-green">100%</span>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  Japanese <span class="bulbasaur-green">N5</span>
+                </li>
+              </ul>
+
+            <h2 class="section-heading">Personal Skills</h2>
+            <ul class="fa-ul rhydon-gray">
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  Comfortable and interested in working with a team.
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  Sense of punctuality.
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  Dedication and enthusiasm on current projects, with strong desire
+                  to learn.
+                </li>
+              </ul>
+        </section>  
+
+        <section id="references" class="portfolio-section">
+            <h2 class="section-heading">References</h2>
+            <ul class="fa-ul rhydon-gray">
+                <li>
+                    <i class="fas fa-user"></i>
+                  Eng. Roberto Fiatt · 
+                  Phone: (506) 8856-9142
+                </li>
+                <br>
+                <li>
+                    <i class="fas fa-user"></i>
+                  Eng. Alvaro Cordero · 
+                  Phone: (506) 6047-4808
+                </li>
+            </ul>
+       
+        </section>
+
         
-        </ul> -->
-
-          <!-- <div class="subheading mb-3">Workflow</div> -->
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Java, C#, C++, SQL
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              HTML, CSS, JavaScript, JQuery
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Bootstrap, CSS
-            </li>
-          </ul>
-
-          <br />
-          <div class="subheading mb-3">Frameworks</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Node.js - MongoDB - Express.js
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              ASP.NET
-            </li>
-          </ul>
-
-          <br />
-          <div class="subheading mb-3">Worked with</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Express.js, Mongoose.js, Node.js
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              SQL Server 2017, Mongo DataBase, JDBC, Oracle
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Bitbucket, Microsoft TFS (Azure DevOps), GitHub
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Postman
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Visual Studio 2017, VS Code, NetBeans
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="skills"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Languages</h2>
-
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Spanish <span class="text-primary">100%</span>
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              English <span class="text-primary">100%</span>
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Japanese <span class="text-primary">N5</span>
-            </li>
-          </ul>
-
-          <br />
-          <br />
-
-          <h2 class="mb-5">Personal Skills</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Comfortable and interested in working with a team.
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Sense of punctuality.
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Dedication and enthusiasm on current projects, with strong desire
-              to learn.
-            </li>
-          </ul>
-
-          <!-- <p>Apart from ....</p> -->
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="references"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">References</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-user"></i>
-              Eng. Roberto Fiatt
-              <p>Phone: (506) 8856-9142</p>
-            </li>
-
-            <li>
-              <i class="fa-li fa fa-user"></i>
-              Eng. Alvaro Cordero
-              <p>Phone: (506) 6047-4808</p>
-            </li>
-
-            <!-- <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li> -->
-          </ul>
-        </div>
-      </section>
+      </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- JQUERY -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+
+
+    <!-- Side menu -->
+    <script src="js/sidenav.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+    <!-- <script src="js/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/smoothScrolling.js"></script>
+     -->
   </body>
 </html>
