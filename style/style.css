@@ -215,6 +215,9 @@ h3 {
         position: absolute;
         left: 0;
     }
+    .portfolio-section {
+        padding-left: 0;
+    }
 }
 
 /*
