@@ -1,0 +1,32 @@
+/* .character {
+  display: block;
+  line-height: 0.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: lowercase;
+} */
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+.bounce-container:hover > * {
+  animation: bounce 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.bounce {
+  animation: bounce 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* 
+span {
+  display: inline-block;
+} */
