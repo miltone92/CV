@@ -1,0 +1,38 @@
+body {
+  background-color: #1f2227;
+  color: #d1d1d1;
+}
+
+a {
+  color: #d1d1d1;
+}
+
+a:hover {
+  color: #d1d1d1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #d1d1d1;
+}
+
+.social-icons a {
+  background-color: #f4f4f4;
+  color: #495057;
+}
+
+.social-icons a:hover {
+  background-color: #10ac84;
+  color: #d1d1d1;
+}
+
+.side-nav {
+  background-color: #2f3640;
+}
+
+.side-nav a:hover {
+  /* background-color: #d6d6d6; */
+  background-color: #495057;
+}
