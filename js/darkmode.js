@@ -22,9 +22,9 @@ let applyStyle = () => {
     bulbSide.classList.add("far");
     bulbSide.classList.remove("sun-flower");
 
-    bulbTop.classList.add("fas");
-    bulbTop.classList.remove("far");
-    bulbTop.classList.add("sun-flower");
+    bulbTop.classList.remove("fas");
+    bulbTop.classList.add("far");
+    bulbTop.classList.remove("sun-flower");
   }
 };
 
