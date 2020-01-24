@@ -11,10 +11,7 @@ a:hover {
   color: #d1d1d1;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   color: #d1d1d1;
 }
 
@@ -35,4 +32,8 @@ h4 {
 .side-nav a:hover {
   /* background-color: #d6d6d6; */
   background-color: #495057;
+}
+
+.dropdown-content {
+  background-color: #2f3640;
 }
